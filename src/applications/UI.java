@@ -63,7 +63,7 @@ public class UI {
 			System.out.println("Wating player: " + chessMatch.getCurrentPlayer());
 			if(chessMatch.getCheck()) {
 				System.out.print(ANSI_RED_BACKGROUND);
-				System.out.print("      - CHECK! -      ");
+				System.out.print("<     - CHECK! -     >");
 				System.out.print(ANSI_RESET);
 			}
 		}
