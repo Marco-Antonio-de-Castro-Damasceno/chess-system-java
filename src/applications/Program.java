@@ -21,7 +21,7 @@ public class Program {
 		
 		while(!chessMatch.getCheckMate()) {
 			try {
-				//UI.clearScreen();
+				UI.clearScreen();
 				
 				UI.printMatch(chessMatch, captured);
 				System.out.println();
@@ -37,10 +37,7 @@ public class Program {
 				
 				ChessPosition target = UI.readChessPosition(sc);
 				
-				
 				ChessPiece capturedPiece = chessMatch.performChessMove(source, target);
-				
-				UI.clearScreen();
 				
 				if(capturedPiece!=null) {
 					captured.add(capturedPiece);
