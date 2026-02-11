@@ -21,7 +21,7 @@ public class Program {
 		
 		while(true) {
 			try {
-				UI.clearScreen();
+				//UI.clearScreen();
 				
 				UI.printMatch(chessMatch, captured);
 				System.out.println();
@@ -34,9 +34,14 @@ public class Program {
 				
 				System.out.println();
 				System.out.print("Target: ");
+				
 				ChessPosition target = UI.readChessPosition(sc);
 				
+				
 				ChessPiece capturedPiece = chessMatch.performChessMove(source, target);
+				
+				UI.clearScreen();
+				
 				if(capturedPiece!=null) {
 					captured.add(capturedPiece);
 				}
@@ -49,8 +54,6 @@ public class Program {
 				System.out.println(e.getMessage());
 				sc.nextLine();
 			}
-			
-			
 		}
 		
 	}
