@@ -10,7 +10,7 @@ a coluna e a linha em que a peça se encontra (exempo: b2), em seguida o sistema
 
 - Java 21
 - Git Bash
-- Maven*  
+- Maven 3.9
 
 Abaixo segue uma imagem do sistema rodando no Git Bash:
 
