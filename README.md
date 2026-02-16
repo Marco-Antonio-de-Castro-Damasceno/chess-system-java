@@ -10,7 +10,7 @@ a coluna e a linha em que a peça se encontra (exempo: b2), em seguida o sistema
 
 - Java 21
 - Git Bash
-- (Opcional) Maven*  
+- Maven*  
 
 Abaixo segue uma imagem do sistema rodando no Git Bash:
 
@@ -21,8 +21,8 @@ Abaixo segue uma imagem do sistema rodando no Git Bash:
 - clonar repositório:  
   git clone https://github.com/Marco-Antonio-de-Castro-Damasceno/chess-system-java  
 - entrar na pasta do projeto:   
-  cd chess-system-java/bin  
+  cd chess-system-java
 - compilando o projeto:  
-  mvn clean package  
+  mvn clean install
 - rodar o projeto:  
-  java -jar target/seu-projeto.jar
+  mvn exec:java -Dexec.mainClass="applications.Program"
